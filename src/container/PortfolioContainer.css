@@ -1,0 +1,91 @@
+* {
+
+    font-size: 16px;
+    color: white;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #38594D;
+}
+
+
+nav {
+    margin-bottom: 40px;
+}
+
+nav > ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+    
+
+
+
+nav > ol > li {
+    list-style:decimal-leading-zero;
+    font-size: 30px;
+    border-bottom: 2px solid #9BBFA8;
+}
+
+
+#root {
+    /* background-image: url('leaves.jpg');
+
+    height: 100%; 
+
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover; */
+    /* The image used */
+    background-color: #38594D ;
+    
+}
+
+#welcome {
+    font-size: 60px;
+    text-align: center;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    width: 500px;
+}
+
+h4 {
+
+
+    font-size: 40px;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+    padding: 0;
+    
+}
+
+.projects > li {
+    
+    font-size: 20px;
+    margin-top: 12px;
+}
