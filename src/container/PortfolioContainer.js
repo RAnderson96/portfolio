@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import "./PortfolioContainer.css"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Projects from '../components/Projects';
+import Home from '../components/Home';
+import About from '../components/About';
+import Contact from '../components/Contact';
+import ErrorPage from '../components/ErrorPage';
+import NavBar from '../components/NavBar';
 
 
 function PortfolioContainer() {
@@ -10,45 +17,17 @@ function PortfolioContainer() {
     return (
 
         <div className='content'>
-            <header>
-                <nav>
-                    <ol>
-                        <li>
-                            About
-                        </li>
-                        <li>
-                            Projects
-                        </li>
-                        <li>
-                            Contact
-                        </li>
+            <Router>
+                <NavBar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="*" element={<ErrorPage />} />
+                </Routes>
+            </Router>
 
-                    </ol>
-                </nav>
-            </header>
-            <div id='containerMainFooter'>
-                <main>
-
-
-                    <div>
-                        <h1 id='welcome'>Welcome.</h1>
-                        <p>My name is Rory Anderson, I'm a trainee full stack software developer based in Edinburgh. I have been working on a variety of projects from React front end designs to full stack Flask projects. Here are a few of my projects.</p>
-                    </div>
-
-                    <div>
-                        <h4>Projects</h4>
-                        <div>
-                            <ul className='projects'>
-                                <li>PPL Workout Tracker</li>
-                                <li>Food Quiz API</li>
-                                <li>Group Project: TBC</li>
-                            </ul>
-                        </div>
-                    </div>
-                </main>
-  
-
-            </div>
 
         </div>
 

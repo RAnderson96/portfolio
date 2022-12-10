@@ -1,54 +1,24 @@
 * {
 
     font-size: 16px;
-    color: white;
-    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
-
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-
 
 
 body{
     display: flex;
     flex-direction: column;
-    background-color: #38594D;
-}
-
-
-nav {
-    margin-bottom: 40px;
-}
-
-nav > ol {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
-
-    
-
-
-
-nav > ol > li {
-    list-style:decimal-leading-zero;
-    font-size: 30px;
-    border-bottom: 2px solid #9BBFA8;
+    background-color: #BFBFBF;
+    color: #BFBFBF;
 }
 
 
 #root {
-    /* background-image: url('leaves.jpg');
-
+    background-image: url('dessertbg.jpg');
     height: 100%; 
-
     background-position: center;
-    background-repeat: repeat;
-    background-size: cover; */
-    /* The image used */
-    background-color: #38594D ;
+    background-repeat:repeat;
+    background-size: contain;
     
 }
 
@@ -58,7 +28,16 @@ nav > ol > li {
 
 }
 
+
+#welcome-info {
+    padding-bottom: 10px;
+    width: 450px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.252);
+    text-align: left;
+}
+
 main {
+    padding-top: 130px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,8 +50,13 @@ p {
 
 h4 {
 
-
+    margin-bottom: 35px;
     font-size: 40px;
+}
+
+#projects-home {
+    margin: 40px 0;
+    margin-bottom: 0;
 }
 
 .projects {
@@ -81,11 +65,21 @@ h4 {
     list-style: none;
     flex-direction: column;
     padding: 0;
+   
+    
     
 }
 
 .projects > li {
     
     font-size: 20px;
-    margin-top: 12px;
+    margin: 12px;
+   
 }
+
+
+@media (max-height: 180px) {
+    nav > li > a {
+      color: #BFBFBF;
+    }
+  }

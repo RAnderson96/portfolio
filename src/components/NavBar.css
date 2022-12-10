@@ -1,0 +1,50 @@
+
+
+
+
+nav {
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    
+}
+
+    
+
+
+
+nav > li > a{
+    list-style: none;
+    font-size: 38px;
+    color: #0D0D0D;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    list-style: none;
+    
+    
+}
+
+
+nav > li> a:hover {
+    text-decoration: underline;
+    text-decoration-color: teal;
+    
+    color:#000000a5
+    
+    
+}
+
+
+@media (max-height: 180px) {
+    nav > li > a {
+      color: #BFBFBF;
+    }
+  }
