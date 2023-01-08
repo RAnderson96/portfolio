@@ -12,15 +12,22 @@ body{
     color: #BFBFBF;
 }
 
+html, body {
+    height: 100%;
+    width: 100%;
+}
 
+/* 
 #root {
     background-image: url('dessertbg.jpg');
     height: 100%; 
     background-position: center;
-    background-repeat:repeat;
+    background-repeat: repeat;
     background-size: contain;
+    background-color: #BFBFAC;
     
-}
+    
+} */
 
 #welcome {
     font-size: 60px;
@@ -37,7 +44,8 @@ body{
 }
 
 main {
-    padding-top: 130px;
+    margin-top: 0;
+    padding-top: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,13 +53,14 @@ main {
 }
 
 p {
-    width: 500px;
+    width: 350px;
 }
 
 h4 {
-
+    margin-top: 0;
+    padding-top: 0;
     margin-bottom: 35px;
-    font-size: 40px;
+    font-size: 20px;
 }
 
 #projects-home {
@@ -78,8 +87,3 @@ h4 {
 }
 
 
-@media (max-height: 180px) {
-    nav > li > a {
-      color: #BFBFBF;
-    }
-  }

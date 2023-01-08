@@ -27,14 +27,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div>
-                        <h4 id="projects-home">Projects</h4>
-                        <div>
-                            <ul className='projects'>
-                                <li>PPL Workout Tracker</li>
-                                <li>Food Quiz API</li>
-                                <li>Group Project: TBC</li>
-                            </ul>
-                        </div>
+                   
                     </div>
                 </main>
 

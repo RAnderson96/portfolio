@@ -3,7 +3,7 @@
 
 
 nav {
-    margin-top: 35px;
+    padding-top: 35px;
     margin-bottom: 40px;
 }
 
@@ -37,14 +37,25 @@ nav > li> a:hover {
     text-decoration: underline;
     text-decoration-color: teal;
     
-    color:#000000a5
+    color:#000000a5;
     
     
 }
 
 
-@media (max-height: 180px) {
+@media (max-height: 300px) {
     nav > li > a {
       color: #BFBFBF;
+
+    
     }
+    nav > li> a:hover {
+
+        text-decoration: underline;
+        text-decoration-color: teal;
+        
+        color: rgba(96, 242, 244, 0.367);
+
+    }
+
   }

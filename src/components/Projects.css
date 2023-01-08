@@ -1,7 +1,6 @@
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 125px;
 }
 
 li {
@@ -35,6 +34,24 @@ p {
 
 }
 
+p > a {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+p > a:hover{
+    text-decoration: underline;
+    text-decoration-color: teal;
+    color: #acb8bfa1;
+}
+
+#flask {
+    filter:invert(100%);
+    width: 100px;
+    height: 100px;
+}
 /* <ul>
 <li>
     <div>
