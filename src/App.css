@@ -41,3 +41,17 @@
 
 
 
+#background {
+  background-image: url('images/pattern.jpg') ;
+  background-repeat: repeat-y;
+  background-size: 90vw;
+  background-position: center;
+  
+
+}
+
+#background2 {
+  background-color: rgba(0, 0, 0, 0.70);
+  
+
+}

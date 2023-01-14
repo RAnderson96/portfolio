@@ -1,5 +1,15 @@
 import React from 'react'
 
+import styled from 'styled-components'
+
+const PillBox = styled.div`
+    padding: 5px;
+    background-color: #333130;
+    color: white;
+    border: 3px solid #333130;
+    border-radius: 20px;
+`
+
 export default function About() {
 
 
@@ -8,7 +18,7 @@ export default function About() {
         <div>
             <main>
 
-                <div>
+                <PillBox>
                     <h4>About Me</h4>
                     <p>
                         I am a motivated and driven individual, a quick learner and a keen problem solver who enjoys learning to code.
@@ -21,7 +31,7 @@ export default function About() {
                     </p>
 
                     
-                </div>
+                </PillBox>
 
 
             </main>
