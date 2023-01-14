@@ -9,7 +9,6 @@ import styled from 'styled-components'
 
 
 
-
 const PillBox = styled.div`
     background-color: #333130;
     color: white;
@@ -102,7 +101,7 @@ function PortfolioContainer() {
                     <hr className='horz-line'></hr>
                     <AboutParent>
                         <div>
-                            <img src='profile_pic.png' id='profile_pic' ></img>
+                            <img src="profile_pic_v2.png" id='profile_pic' ></img>
                         </div>
                         <div id='about-me-info'>
                             <IntroStatement>

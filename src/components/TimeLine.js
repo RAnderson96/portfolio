@@ -37,6 +37,20 @@ const ExpandButton = styled.button`
   border-radius: 20px;
 `
 
+const ExpandButtonText = styled.p`
+width: max-content;
+font-size: 16px;
+margin: 5px 10px;
+
+`
+
+const ExpandButtonParent = styled.span`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+`
+
 export default function TimeLine() {
 
     const [open, setOpen] = useState(true);
@@ -46,10 +60,10 @@ export default function TimeLine() {
 
     return (
         <PillBox>
-            <TimelineTitle>My Experience</TimelineTitle>
+            <TimelineTitle>My Timeline</TimelineTitle>
             <hr className='horz-line'></hr>
             <br></br>
-            <ExpandButton onClick={toggle}>{open ? <i class="fa-solid fa-chevron-up"></i> : <i class="fa-solid fa-chevron-down"></i>}</ExpandButton>
+            <ExpandButtonParent><ExpandButton onClick={toggle} area-expanded={open}>{open ? <i class="fa-solid fa-minus"></i> : <i class="fa-solid fa-plus"></i>}</ExpandButton>{open ? <ExpandButtonText>minimise</ExpandButtonText> : <ExpandButtonText>expand</ExpandButtonText>} </ExpandButtonParent>
             {open && (
                 <div className='toggle'>
                 <div>
@@ -176,6 +190,9 @@ export default function TimeLine() {
                 </div>
                 
                 )}
+                
+                
+                
             
 
         </PillBox>
