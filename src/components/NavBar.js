@@ -3,24 +3,29 @@ import React from "react"
 import "./NavBar.css"
 
 
+
+
 const NavBar = () => {
 
 return (
 
 
-    <nav>
-        <li>
-            <Link to="/">Home</Link>
-        </li>
-        <li>
-            <Link to="/about" >About</Link>
-        </li>
-        <li>
-            <Link to="/projects" >Projects</Link>
-        </li>
-        <li>
-            <Link to="/contact" >Contact</Link>
-        </li>
+    <nav id="navparent1">
+        <div id="MyName">
+            <h4>Rory Anderson</h4>
+            <h5>Software Developer</h5>
+        </div>
+        <div className="navelement">
+            <h4>About</h4>
+        </div>
+        <div className="navelement">
+            <h4>Projects</h4>
+
+        </div>
+            
+
+        
+       
     </nav>
 )
 

@@ -1,85 +1,68 @@
-* {
-
-    font-size: 16px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+body, HTML {
+    background-color: black;
+    color: White;
 }
 
 
-body{
-    display: flex;
-    flex-direction: column;
-    background-color: #BFBFBF;
-    color: #BFBFBF;
+
+.page {
+   
 }
 
-
-#root {
-    background-image: url('dessertbg.jpg');
-    height: 100%; 
-    background-position: center;
-    background-repeat:repeat;
-    background-size: contain;
-    
-}
-
-#welcome {
-    font-size: 60px;
+.pageheading {
+    margin-top: 40px;
     text-align: center;
+    background-color: #295650;
+    font-size: 32px;
+    padding: 10px;
+    margin-bottom: 5vh;
+}
 
+#profile_pic {
+    width: 280px;
+    padding: 10px 0;
+    margin: 20px 15px 20px 20px;
+    
 }
 
 
-#welcome-info {
-    padding-bottom: 10px;
-    width: 450px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.252);
-    text-align: left;
+#about-me-info {
+    
+    
 }
 
-main {
-    padding-top: 130px;
+#about-me-info > p {
+    margin: auto;
+    width: 550;
+    font-size: 24px;
+    margin-left: 15px;
+    
+}
+
+.logo_container > i {
+    font-size: 12.5vh;
+    color: #95C1B6
+
+    
+}
+
+.logo_container {
+    padding: 15px;
+}
+
+#skill-area {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
 
-p {
-    width: 500px;
-}
-
-h4 {
-
-    margin-bottom: 35px;
-    font-size: 40px;
-}
-
-#projects-home {
-    margin: 40px 0;
-    margin-bottom: 0;
-}
-
-.projects {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    flex-direction: column;
-    padding: 0;
-   
+.horz-line {
+    color:  #329a8c;
+    background-color:  #329a8c;
+    border-color:  #329a8c;
+    height: 1px;
+    margin:0 5px;
+    padding:0;
     
-    
+
 }
-
-.projects > li {
-    
-    font-size: 20px;
-    margin: 12px;
-   
-}
-
-
-@media (max-height: 180px) {
-    nav > li > a {
-      color: #BFBFBF;
-    }
-  }
