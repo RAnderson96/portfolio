@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react'
-
+import TimeLine from '../components/TimeLine';
 
 import "./PortfolioContainer.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Projects from '../components/Projects';
 import NavBar from '../components/NavBar';
 import styled from 'styled-components'
+
+
+
 
 const PillBox = styled.div`
     background-color: #333130;
@@ -191,7 +194,9 @@ function PortfolioContainer() {
                     </PillBox2>
 
                 </div>
-
+                <div>
+                    <TimeLine></TimeLine>
+                </div>
             </div>
             <div className='section'>
                 <h4 className='pageheading'>Projects</h4>
