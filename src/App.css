@@ -1,6 +1,6 @@
 
 #background {
-  background-image: url('images/pattern.jpg') ;
+  background-image: url('images/test4_pattern.png') ;
   background-repeat: repeat-y;
   background-size: 92.5vw;
   background-position: center;
@@ -9,7 +9,7 @@
 }
 
 #background2 {
-  background-color: rgba(0, 6, 5, 0.8);
+  background-color: rgba(1, 10, 8, 0.75);
   /* background-color: rgba(0, 55, 47, 0.2); */
   
 
