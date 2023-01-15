@@ -12,21 +12,21 @@
     flex-direction: row;
 }
 
-#MyName {
-    
-}
+
 
 .navelement> div {
     
 
 }
+
+
 .navelement  > h4 {
     padding: 3px;
     margin: 0;
     border: 3px solid #295650;
     background-color: #295650;
     border-radius: 20px;
-    font-size: 32px;
+    font-size: 26px;
 }
 
 
@@ -38,7 +38,8 @@
     padding: 0;
     /* margin-left: 10px; */
     margin: 0 0 0 10px;
-    font-size: 30px;
+    font-size: 26px;
+    
     
 }
 #MyName > h5 {
@@ -46,6 +47,23 @@
     margin: 0;
     padding: 0;
     margin-left: 10px;
-    font-size: 22px;
+    font-size: 18px;
+    
 
 }
+
+@media (max-width: 768px) {
+    
+    #MyName > h5 {
+        font-size: 12px;
+    }
+
+    #MyName > h4 {
+        font-size: 18px;
+    }
+
+    .navelement  > h4 {
+        font-size: 18px;
+    }
+
+  }

@@ -5,8 +5,8 @@ import "./PortfolioContainer.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Projects from '../components/Projects';
 import NavBar from '../components/NavBar';
-import styled from 'styled-components'
-
+import styled from 'styled-components';
+import CarouselContainer from '../components/CarouselContainer';
 
 
 const PillBox = styled.div`
@@ -15,13 +15,16 @@ const PillBox = styled.div`
     border: 3px solid #333130;
     border-radius: 20px;
     height: max-content;
-    width: 80vw;
+    width: 75vw;
     margin: auto;
     
     align-content: center;
     padding: 5px 10px;
     align-items: center;
-    margin-bottom: 10vh;
+    margin-bottom: 40px;
+    @media (max-width: 950px) {
+        
+  }
     
     `
 const PillBox2 = styled.div`
@@ -35,9 +38,14 @@ width: 35vw;
 align-content: center;
 padding: 5px 10px;
 align-items: center;
-margin-bottom: 5vh;
+margin-bottom: 40px;
 margin-left: 25px;
 margin-right: 25px;
+@media (max-width: 950px) {
+    width: 75vw;
+    
+    
+  }
 
 `
 
@@ -45,8 +53,9 @@ margin-right: 25px;
 const LanguagesList = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    
 
 `
 
@@ -54,6 +63,9 @@ const AboutParent = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 const SkillsParent = styled.div`
@@ -64,12 +76,15 @@ const SkillsParent = styled.div`
 
 const LanguageCaption = styled.figcaption`
     text-align: center;
-    margin: 5px;
-    font-size: 20px;
+    margin-top: 5px;
+    font-size: 14px;
+    @media (max-width: 950px) {
+    font-size: 12px;
+  }
 `
 
 const TechnicalSkillsTitle = styled.h4`
-    font-size: 32px;
+    font-size: 24px;
     margin: 10px 0 15px 15px;
     
     `
@@ -110,8 +125,12 @@ function PortfolioContainer() {
                             <br></br>
                             <p>
                             I am a Junior Software Developer who is completing the CodeClan Professional Software Development Course. Key skills include leadership, problem-solving and analyical skills. 
-                            After completing a 5 year integrated Masters of Mechanical Engineering I worked in the offshore oil and gas sector as a Mechanical engineer for three years before retraining as a Software Developer. 
-                            I am eager to keep learning and apply my new technical skills in the tech sector.
+                            
+                            </p>
+                            <br></br>
+                            <p>
+                                After completing a 5 year integrated Masters of Mechanical Engineering I worked in the offshore oil and gas sector as a Mechanical engineer for three years before retraining as a Software Developer. 
+                                I am eager to keep learning and apply my new technical skills in the tech sector.
                             </p>
 
                         </div>
@@ -133,7 +152,7 @@ function PortfolioContainer() {
                                 </div>
                                 <div className='logo_container'>
                                     <i class="devicon-matlab-plain"></i>
-                                    <LanguageCaption>Matlab</LanguageCaption>
+                                    <LanguageCaption>MATLAB</LanguageCaption>
                                 </div>
                                 <div className='logo_container'>
                                     <i class="devicon-java-plain"></i>
@@ -141,7 +160,7 @@ function PortfolioContainer() {
                                 </div>
                                 <div className='logo_container'>
                                     <i class="devicon-javascript-plain"></i>
-                                    <LanguageCaption>Javascript</LanguageCaption>
+                                    <LanguageCaption>JavaScript</LanguageCaption>
                                 </div>
                                 <div className='logo_container'>
                                     <i class="devicon-postgresql-plain"></i>
@@ -199,6 +218,9 @@ function PortfolioContainer() {
             </div>
             <div className='section'>
                 <h4 className='pageheading'>Projects</h4>
+                <PillBox>
+                    <CarouselContainer></CarouselContainer>
+                </PillBox>
             </div>
             <div className='section'>
                 <h4 className='pageheading'>Contact</h4>

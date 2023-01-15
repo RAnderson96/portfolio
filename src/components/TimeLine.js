@@ -10,17 +10,17 @@ const PillBox = styled.div`
     border: 3px solid #333130;
     border-radius: 20px;
     height: max-content;
-    width: 80vw;
+    width: 75vw;
     margin: auto;
     
     align-content: center;
     padding: 5px 10px;
     align-items: center;
-    margin-bottom: 10vh;
+    margin-bottom: 40px;
     
     `
 const TimelineTitle = styled.h4`
-font-size: 32px;
+font-size: 26px;
 margin: 10px 0 15px 15px;
 
 `

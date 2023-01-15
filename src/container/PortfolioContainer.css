@@ -10,12 +10,12 @@ body, HTML {
 }
 
 .pageheading {
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
     background-color: #295650;
-    font-size: 32px;
-    padding: 10px;
-    margin-bottom: 5vh;
+    font-size: 26px;
+    padding: 6px;
+    margin-bottom: 20px;
 }
 
 #profile_pic {
@@ -26,21 +26,18 @@ body, HTML {
 }
 
 
-#about-me-info {
-    
-    
-}
+
 
 #about-me-info > p {
     margin: auto;
     width: 550;
-    font-size: 24px;
+    font-size: 20px;
     margin-left: 15px;
     
 }
 
 .logo_container > i {
-    font-size: 12.5vh;
+    font-size: 8vw;
     color: #95C1B6
 
     
@@ -48,6 +45,10 @@ body, HTML {
 
 .logo_container {
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
 }
 
 #skill-area {
@@ -65,4 +66,64 @@ body, HTML {
     padding:0;
     
 
+}
+
+
+
+@media (max-width: 950px) {
+    .pageheading {
+        font-size: 26px;
+    }
+    
+    #profile_pic {
+        width: 200px;
+        padding: 10px 0;
+        margin: 20px 15px 20px 20px;
+        
+    }
+    
+    
+    
+    
+    #about-me-info > p {
+        margin: auto;
+        width: 550;
+        font-size: 16px;
+        margin-left: 15px;
+        
+    }
+    
+    .logo_container > i {
+        font-size: 15vw;
+        color: #95C1B6;
+        padding: 0;
+        margin: 0;
+    
+        
+    }
+    
+    .logo_container {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #skill-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    
+    .horz-line {
+        color:  #329a8c;
+        background-color:  #329a8c;
+        border-color:  #329a8c;
+        height: 1px;
+        margin:0 5px;
+        padding:0;
+        
+    
+
+  }
 }
