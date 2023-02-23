@@ -18,12 +18,3 @@ function App() {
 }
 
 export default App;
-
-
-// className="App" style={{
-//   backgroundImage: `url('dessertbg.jpg')`,
-//   backgroundRepeat: `repeat`,
-//   backgroundSize: `contain`,
-//   height: `100%`,
-//   backgroundPosition: `center`
-// }}

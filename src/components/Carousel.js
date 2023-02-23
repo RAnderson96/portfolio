@@ -6,37 +6,26 @@ import "./Carousel.css"
 export const CarouselItem = ({ children, width }) => {
 
     return (
-        <div className="carousel-item" style={{ width: width, height:"70vh" }}>
+        <div className="carousel-item" style={{ width: width }}>
             {children}
-
         </div>
     );
 
 };
 
-
-
 export default function Carousel( {children} ) {
     const [activeIndex, setActiveIndex] = useState(0);
-
-    const [leftClick, setLeftClick] = useState({left: false, right: false})
-
     const updateClick = () => {
 
     }
-
-
     const updateIndex = (newIndex) => {
         if (newIndex < 0) {
             newIndex = 0;
         } else if (newIndex >= React.Children.count(children)) {
             newIndex = React.Children.count(children) -1;
         }
-
         setActiveIndex(newIndex)
     }
-
-    
 
     return (
         <div className="carousel">

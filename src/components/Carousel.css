@@ -12,9 +12,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
-    background-color: #295650;
+    /* background-color: #333130; */
     color: white;
+    
     
 
 
@@ -40,6 +40,6 @@
 
 .indicators > button.active {
     background-color: #30F3FF;
-    color: black;
+    color: #0d2321;
 }
 

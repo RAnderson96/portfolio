@@ -50,6 +50,23 @@ margin-right: 25px;
 `
 
 
+const PillBox3 = styled.div`
+    background-color: #333130;
+    color: white;
+    border: 3px solid #333130;
+    border-radius: 20px;
+    width: 75vw;
+    margin: auto;
+    align-content: center;
+    padding: 5px 10px;
+    align-items: center;
+    margin-bottom: 40px;
+    @media (max-width: 950px) {
+        
+  }
+    
+    `
+
 const LanguagesList = styled.div`
     display: flex;
     flex-direction: row;
@@ -77,10 +94,12 @@ const SkillsParent = styled.div`
 const LanguageCaption = styled.figcaption`
     text-align: center;
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 18px;
+    color: white;
     @media (max-width: 950px) {
     font-size: 12px;
   }
+ 
 `
 
 const TechnicalSkillsTitle = styled.h4`
@@ -99,6 +118,27 @@ const IntroStatement = styled.p`
     font-size: 24px;
 `
 
+const ContactLogoLink = styled.a`
+text-decoration: none;
+font-size: 5vw; 
+color: #295650;
+${ContactLogoLink}:hover {
+    color: #95C1B6;
+}
+
+`
+
+const ContactContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+   
+`
+
+
+
 
 function PortfolioContainer() {
 
@@ -110,7 +150,7 @@ function PortfolioContainer() {
         <div className='content'>
             <NavBar></NavBar>
             <div className="section">
-                <h4 className='pageheading'>About</h4>
+                <h4 className='pageheading' id='about'>About</h4>
                 <PillBox>
                     <TechnicalSkillsTitle>Profile</TechnicalSkillsTitle>
                     <hr className='horz-line'></hr>
@@ -124,12 +164,12 @@ function PortfolioContainer() {
                             </IntroStatement>
                             <br></br>
                             <p>
-                            I am a Junior Software Developer who is completing the CodeClan Professional Software Development Course. Key skills include leadership, problem-solving and analyical skills. 
-                            
+                                I am a Junior Software Developer who is completing the CodeClan Professional Software Development Course. Key skills include leadership, problem-solving and analyical skills.
+
                             </p>
                             <br></br>
                             <p>
-                                After completing a 5 year integrated Masters of Mechanical Engineering I worked in the offshore oil and gas sector as a Mechanical engineer for three years before retraining as a Software Developer. 
+                                After completing a 5 year integrated Masters of Mechanical Engineering I worked in the offshore oil and gas sector as a Mechanical engineer for three years before retraining as a Software Developer.
                                 I am eager to keep learning and apply my new technical skills in the tech sector.
                             </p>
 
@@ -142,7 +182,7 @@ function PortfolioContainer() {
 
 
                     <PillBox2>
-                        <TechnicalSkillsTitle>Languages</TechnicalSkillsTitle>
+                        <TechnicalSkillsTitle>Technical Skills</TechnicalSkillsTitle>
                         <hr className='horz-line'></hr>
                         <div>
                             <LanguagesList>
@@ -161,6 +201,10 @@ function PortfolioContainer() {
                                 <div className='logo_container'>
                                     <i class="devicon-javascript-plain"></i>
                                     <LanguageCaption>JavaScript</LanguageCaption>
+                                </div>
+                                <div className='logo_container'>
+                                    <i class="devicon-typescript-plain"></i>
+                                    <LanguageCaption>TypeScript</LanguageCaption>
                                 </div>
                                 <div className='logo_container'>
                                     <i class="devicon-postgresql-plain"></i>
@@ -217,13 +261,34 @@ function PortfolioContainer() {
                 </div>
             </div>
             <div className='section'>
-                <h4 className='pageheading'>Projects</h4>
-                <PillBox>
+                <h4 className='pageheading' id='projects'>Projects</h4>
+                <PillBox3>
+                <div>
                     <CarouselContainer></CarouselContainer>
-                </PillBox>
+
+                </div>
+                </PillBox3>
             </div>
             <div className='section'>
-                <h4 className='pageheading'>Contact</h4>
+                <h4 className='pageheading'>Contact </h4>
+                <ContactContainer>
+                    <div>
+                        <ContactLogoLink href='https://github.com/RAnderson96/' target={'_blank'}  >
+                            <i class="devicon-github-original"></i>
+                            <LanguageCaption>GitHub</LanguageCaption>
+                        </ContactLogoLink>
+                    </div>
+                    <div>
+                        <ContactLogoLink href='https://linkedin.com/in/rory-anderson-892a62137' target={'_blank'}  >
+
+                            <i class="devicon-linkedin-plain"></i>
+                            <LanguageCaption>LinkedIn</LanguageCaption>
+
+                        </ContactLogoLink>
+                    </div>
+
+
+                </ContactContainer>
             </div>
 
         </div>

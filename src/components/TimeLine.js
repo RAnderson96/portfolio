@@ -138,10 +138,7 @@ export default function TimeLine() {
             Delivered projects as part of a multiskilled engineering team, designing piping systems using AutoCAD, providing a variety of engineering services and solutions.
             Worked to deadlines to meet client expectations within budget.
         </p>
-        <p>
-            Completed a project to update a clients Piping and Valve specifications.
-            By implementing VBA code I managed to automate a significant portion of the updates, this increased profit, quality of deliverables, and allowed the project to be completed ahead of schedule.
-        </p>
+        
     </VerticalTimelineElement>
     <VerticalTimelineElement
         className="vertical-timeline-element--work"
@@ -173,6 +170,9 @@ export default function TimeLine() {
     >
         <h3 className="vertical-timeline-element-title">Masters of Mechanical Engineering, MEng</h3>
         <h4 className="vertical-timeline-element-subtitle">The University of Aberdeen</h4>
+        <p>
+            Achieved a First Class Honours
+        </p>
         <p>
             Modules Included: Project Safety and Management (A4), Design of an Offshore Wind
             Farm (A3); Engineering Analysis and Methods (A1); Engineering Materials (A3);

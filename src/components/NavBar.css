@@ -14,19 +14,18 @@
 
 
 
-.navelement> div {
-    
-
-}
-
-
-.navelement  > h4 {
+.navelement  > a >  h4 {
     padding: 3px;
     margin: 0;
     border: 3px solid #295650;
     background-color: #295650;
     border-radius: 20px;
     font-size: 26px;
+    
+}
+.navelement  > a {
+   text-decoration: none;
+   color: white;
 }
 
 
