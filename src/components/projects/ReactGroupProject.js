@@ -38,7 +38,7 @@ export default function ReactGroupProject() {
 
     const LogoLink = styled.a`
     text-decoration: none;
-    font-size: 5vw; 
+    font-size: 60px; 
     color: #295650;
     ${LogoLink}:hover {
         color: #95C1B6;

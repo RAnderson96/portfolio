@@ -120,7 +120,7 @@ const IntroStatement = styled.p`
 
 const ContactLogoLink = styled.a`
 text-decoration: none;
-font-size: 5vw; 
+font-size: 65px; 
 color: #295650;
 ${ContactLogoLink}:hover {
     color: #95C1B6;

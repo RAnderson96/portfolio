@@ -42,7 +42,7 @@ padding: 10px;
 
 const LogoLink = styled.a`
 text-decoration: none;
-font-size: 5vw; 
+font-size: 60px; 
 color: #295650;
 ${LogoLink}:hover {
    color: #95C1B6;
@@ -56,7 +56,7 @@ ${LogoLink}:hover {
     return (
         <CarouselContentParent>
             <CarouselInfo>
-                <h4>Workout Planner</h4>
+                <h4>Workout Planner App</h4>
                 <hr className='horz-line'></hr>
                 <br></br>
                 <CarouselInfo>
