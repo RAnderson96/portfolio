@@ -84,7 +84,7 @@ export default function ReactGroupProject() {
 
             </CarouselInfo>
             <VideoContainer>
-                <video preload={true} width={'300px'} controls >
+                <video preload={true} width={'280px'} controls >
                     <source src={video1} type='video/mp4'></source>
                 </video>
             </VideoContainer>

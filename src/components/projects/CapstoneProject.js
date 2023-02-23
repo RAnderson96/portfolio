@@ -73,7 +73,7 @@ export default function CapstoneProject() {
 
             </CarouselInfo>
             <div>
-                <video preload={true} width={'300px'} controls >
+                <video preload={true} width={'280px'} controls >
                     <source src={test2} type='video/mp4'></source>
                 </video>
             </div>
