@@ -208,10 +208,6 @@ export default function TimeLine() {
 
             )}
 
-
-
-
-
         </PillBox>
     )
 }

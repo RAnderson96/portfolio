@@ -30,7 +30,7 @@ justify-content: center;
 const CarouselInfo = styled.div`
 width: 40vw;
 white-space:pre-wrap;
-font-size: 26px;
+font-size: 20px;
 padding: 10px;
 @media (max-width: 950px) {
    font-size: 18px;
